@@ -12,7 +12,7 @@
   <header>
     <h1>Crystal Collectors!</h1>
   </header>
-  <div class="container">
+  <div id ="GameRules">
     <p>You will be given a random number at the start of the game.</p>
     <p>There are four crystals at the below. By clicking on a crystal, you will add a random amount to your total score.</p>
     <p>The object is to match your number to the random number. If you add up to the random number you win. If your number goes over, you lose.</p>
@@ -20,15 +20,17 @@
     <p>Everytime a new game begins, the crystal values reset. Good luck!</p>
   </div>
   <div id="randomCounter"> 0 </div>
-  <div id="winsCounter">Wins: 0</div>
-  <div id= "lossCounter">Losses: 0</div>
+  <div id="winsCounter">Wins: <span id= "winsCounter"></span> </div>
+  <div id="lossCounter">Losses: <span id= "lossCounter"></span> </div>
+
+
   <div class= crystal-images>
-    <img src="assets/images/GreenCrystal.png" alt="Green Crystal">
-    <img src="assets/images/BlueCrystal.png" alt="Blue Crystal">
-    <img src="assets/images/PurpleCrystal.png" alt="Purple Crystal">
-    <img src="assets/images/AmberCrystal.png" alt="Amber Crystal">
+    <img src="assets/images/GreenCrystal.png" id= greenCrystal  alt="Green Crystal">
+    <img src="assets/images/BlueCrystal.png" id= blueCrystal alt="Blue Crystal">
+    <img src="assets/images/PurpleCrystal.png" id= purpleCrystal alt="Purple Crystal">
+    <img src="assets/images/AmberCrystal.png" id= amberCrystal alt="Amber Crystal">
   </div>
-  <div id= "ScoreCounter"> 0 </div>
+  <div id= "scoreCounter"> <span id = "scoreCounter"></span> </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/javascript/game.js"></script>
