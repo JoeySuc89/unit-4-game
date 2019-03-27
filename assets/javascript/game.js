@@ -5,7 +5,7 @@ var lossesCounter = 0;
 var crystalValueGreen = Math.floor(Math.random() * 12) + 1;
 var crystalValueBlue = Math.floor(Math.random() * 12) + 1;
 var crystalValuePurple = Math.floor(Math.random() * 12) + 1;
-var crystalValueAmber = Mathfloor(Math.random() * 12) + 1;
+var crystalValueAmber = Math.floor(Math.random() * 12) + 1;
 var randomScoreCounter = Math.floor(Math.random() * (120 - 19) + 19);
 $("#randomCounter").text(randomScoreCounter);
 console.log(randomScoreCounter)
@@ -55,7 +55,7 @@ function reset() {
   crystalValuePurple = Math.floor(Math.random() * 12) + 1;;
   crystalValueAmber = Math.floor(Math.random() * 12) + 1;;
   scoreCounter = 00;
-}
+
 function winsLossesScore() {
   console.log(`scoreCounter ${scoreCounter} randomCounter: ${randomScoreCounter}`)
   if (scoreCounter == randomScoreCounter){
