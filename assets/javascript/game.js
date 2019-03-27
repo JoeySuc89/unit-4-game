@@ -8,7 +8,7 @@ var crystalValuePurple = Math.floor(Math.random() * 12) + 1;
 var crystalValueAmber = Math.floor(Math.random() * 12) + 1;
 var randomScoreCounter = Math.floor(Math.random() * (120 - 19) + 19);
 $("#randomCounter").text(randomScoreCounter);
-console.log(randomScoreCounter)
+// console.log(randomScoreCounter)
 
 //Create a randomNumber loop to change the value of the crystals.
 $(document).ready(function() {
@@ -17,7 +17,7 @@ $(document).ready(function() {
     scoreCounter += crystalValueGreen;
     $("#scoreCounter").text("Your score: " + scoreCounter);
     winsLossesScore();
-    console.log(crystalValueGreen)
+    // console.log(crystalValueGreen)
   });
 
 
@@ -25,26 +25,26 @@ $(document).ready(function() {
     scoreCounter += crystalValueBlue;
     $("#scoreCounter").text("Your score: " + scoreCounter);
     winsLossesScore();
-    console.log(crystalValueBlue)
+    // console.log(crystalValueBlue)
   });
 
   $("#purpleCrystal").on("click", function() {
     scoreCounter += crystalValuePurple;
     $("#scoreCounter").text("Your score: " + scoreCounter);
     winsLossesScore();
-    console.log(crystalValuePurple)
+    // console.log(crystalValuePurple)
   });
 
   $("#amberCrystal").on("click", function() {
     scoreCounter += crystalValueAmber;
     $("#scoreCounter").text("Your score: " + scoreCounter);
     winsLossesScore();
-    console.log(crystalValueAmber)
+    // console.log(crystalValueAmber)
   });
 
 
 
-   console.log(winsLossesScore);
+  //  console.log(winsLossesScore);
 })
 
 function reset() {
@@ -55,6 +55,7 @@ function reset() {
   crystalValuePurple = Math.floor(Math.random() * 12) + 1;;
   crystalValueAmber = Math.floor(Math.random() * 12) + 1;;
   scoreCounter = 00;
+}
 
 function winsLossesScore() {
   console.log(`scoreCounter ${scoreCounter} randomCounter: ${randomScoreCounter}`)
@@ -62,12 +63,12 @@ function winsLossesScore() {
     winsCounter++;
     $("#winsCounter").html("Wins: " + winsCounter);
     reset();
-    console.log(winsCounter);
+    // console.log(winsCounter);
   }
   if  (scoreCounter > randomScoreCounter) {
     lossesCounter++;
     $("#lossCounter").html("Losses: " + lossesCounter);
     reset();
-    console.log(lossCounter);
+    // console.log(lossCounter);
   }
 }
